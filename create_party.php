@@ -17,3 +17,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo json_encode(['party_link' => $party_link]);
 }
 ?>
+

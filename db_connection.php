@@ -9,10 +9,10 @@ $password = 'qwWanokuni999@@'; // Replace with your database password
 
 try {
     // Create a new PDO instance
-    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
     
     // Set PDO error mode to exception for debugging
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     // Handle connection errors
     die("Database connection failed: " . $e->getMessage());
